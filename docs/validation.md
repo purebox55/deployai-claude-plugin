@@ -92,10 +92,10 @@ run; understandability validation remains pending.
 - Unauthenticated production MCP initialization: returned HTTP 401 and the
   OAuth protected-resource metadata challenge, including `releases:publish`.
 - Prettier Markdown/JSON formatting: passed.
-- GitHub installation/update: pending. The owner created the public repository
-  and invited `buzagloidan`; that invitation was accepted on 22 October. A
-  README-only baseline initializes `main`; the plugin is introduced through a
-  separate implementation branch and PR.
+- GitHub installation: passed from the implementation branch on 22 October;
+  see the exact commit and scope below. Default-branch installation awaits the
+  initial PR merge. The owner invited `buzagloidan`; that invitation was accepted
+  on 22 October. A README-only baseline initializes `main`.
 - Browser OAuth and authenticated plugin tools: pending.
 - Installed-client preparation, publication and live-site checks: pending.
 - First-time-user usability: pending.
@@ -109,6 +109,26 @@ submission report: licensing and a listing icon remain unresolved. Those are
 official-directory submission findings; native marketplace installation passed.
 This package has not been submitted to Anthropic's official directory, and no
 open-source license has been selected on the owner's behalf.
+
+### GitHub installation on 22 October 2026
+
+- Client: native Claude Code 2.1.308, macOS arm64, Node.js 22.20.0.
+- Source: `purebox55/deployai-claude-plugin#codex/claude-marketplace`.
+- Fetched commit: `cebeb3277e82f98ae0d9b62e51b28f2a394c1eb1`.
+- Fresh isolated marketplace registration and installation: passed. The client
+  cloned the public GitHub repository over HTTPS and installed version 0.1.0.
+- Component discovery: four skills (`init`, `prepare`, `publish`, `status`), one
+  HTTP MCP server, zero agents and zero hooks.
+- All seven installed plugin files matched the reviewed source byte-for-byte.
+- Native MCP connection: reached `https://dash.atar.biz/mcp` and reported
+  `Needs authentication`, as expected without a DeployAI grant.
+- Strict manifest validation, Prettier formatting and Git diff checks: passed.
+
+This tests GitHub fetching and installed package discovery, not an authenticated
+Claude conversation. The subsequent changes update documentation only; the
+installed plugin files are unchanged from the tested commit. Browser consent,
+authenticated tools, preparation and publication remain pending. No normal
+Claude configuration or existing user grant was used for this installation.
 
 Only Markdown, JSON and an ignore file are added. No application code, provider
 configuration or authentication implementation changed, and no application

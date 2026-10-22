@@ -101,7 +101,7 @@ unrelated workspace content. See [DeployAI's privacy policy](https://atar.biz/pr
 
 ## Develop and verify
 
-Validated with Claude Code **2.1.304 and 2.1.306**, Node.js **22.20.0**, macOS arm64. See
+Validated with Claude Code **2.1.304, 2.1.306 and 2.1.308**, Node.js **22.20.0**, macOS arm64. See
 [validation and acceptance](docs/validation.md) for observed evidence and pending
 installed-client checks.
 
