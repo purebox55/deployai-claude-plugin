@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "deployai": {
+      "type": "http",
+      "url": "https://dash.atar.biz/mcp"
+    }
+  }
+}

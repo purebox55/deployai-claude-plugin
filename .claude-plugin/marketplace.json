@@ -1,0 +1,14 @@
+{
+  "name": "deployai-marketplace",
+  "owner": { "name": "DeployAI" },
+  "metadata": {
+    "description": "Connect Claude Code to DeployAI and publish owner-approved releases."
+  },
+  "plugins": [
+    {
+      "name": "deployai",
+      "source": "./plugins/deployai",
+      "description": "Connect, prepare, publish and inspect DeployAI projects from Claude Code."
+    }
+  ]
+}

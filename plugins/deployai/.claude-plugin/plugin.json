@@ -1,0 +1,10 @@
+{
+  "name": "deployai",
+  "version": "0.1.0",
+  "description": "Publish websites and supported web apps with DeployAI, with explicit approval of each release.",
+  "author": { "name": "DeployAI" },
+  "homepage": "https://atar.biz",
+  "repository": "https://github.com/purebox55/deployai-claude-plugin",
+  "privacyPolicyUrl": "https://atar.biz/privacy",
+  "keywords": ["deployai", "hosting", "deployment", "mcp"]
+}
